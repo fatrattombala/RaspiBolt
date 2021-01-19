@@ -45,11 +45,11 @@ As reindexing can take more than a day, you can follow the progress using `sudo 
 ### Install NodeJS
 
 * Starting with user "admin", we switch to user "root" and add the [Node JS](https://nodejs.org) package repository.
-  We'll use version 12 which is the most recent stable one. Then, exit the "root" user session.
+  We'll use version 14 which is the most recent stable one. Then, exit the "root" user session.
 
   ```sh
   $ sudo su
-  $ curl -sL https://deb.nodesource.com/setup_12.x | bash -
+  $ curl -sL https://deb.nodesource.com/setup_14.x | bash -
   $ exit
   ```
 
@@ -87,7 +87,7 @@ We are going to install the BTC RPC Explorer in the home directory since it does
   Since the program is written in JavaScript, there is no need to compile.
 
   ```sh
-  $ git clone --branch v2.0.1 https://github.com/janoside/btc-rpc-explorer.git
+  $ git clone --branch v2.1.0 https://github.com/janoside/btc-rpc-explorer.git
   $ cd btc-rpc-explorer
   $ npm install
   ```
